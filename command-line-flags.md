@@ -129,26 +129,26 @@ Below is an example of the formatting for the command line table
 
 ### *Game*
 
-| **Flag**                | **Effect**                       | **Category** | **Status**     |
-| ----------------------- | -------------------------------- | ------------ | -------------- |
-| **game**                | Unknown                          | Game         | **Untested**   |
-| **gameinfo_define**     | Unknown                          | Game         | **Untested**   |
-| **language**            | Unknown                          | Game         | **Untested**   |
-| **launcherlanguage**    | Unknown                          | Game         | **Untested**   |
-| **launchersublanguage** | Unknown                          | Game         | **Untested**   |
-| **netconpassword**      | Unknown                          | Game         | **Untested**   |
-| **netconport**          | Unknown                          | Game         | **Untested**   |
-| **netspike**            | Unknown                          | Game         | **Untested**   |
-| **novpk**               | Unknown                          | Game         | **Untested**   |
-| **novr**                | Disable VR Mode                  | Game         | **Functional** |
-| **pause**               | Unknown                          | Game         | **Untested**   |
-| **port**                | Unknown                          | Game         | **Untested**   |
-| **textlanguage**        | Unknown                          | Game         | **Untested**   |
-| **textsublanguage**     | Unknown                          | Game         | **Untested**   |
-| **vrdemo**              | Leftover from Robot Repair demo? | Game         | **Untested**   |
-| **addon**               | Launch game with addon           | Game         | **Untested**   |
-| **addon_path**          | Addon path                       | Game         | **Untested**   |
-| **usercon**             | Enable RCON remote server admin  | Game         | **Functional** |
+| **Flag**                     | **Effect**                       | **Category** | **Status**     |
+| ---------------------------- | -------------------------------- | ------------ | -------------- |
+| **game**   <*string*>        | Unknown                          | Game         | **Untested**   |
+| **gameinfo_define**          | Unknown                          | Game         | **Untested**   |
+| **language**   <*string*>    | Unknown                          | Game         | **Untested**   |
+| **launcherlanguage**         | Unknown                          | Game         | **Untested**   |
+| **launchersublanguage**      | Unknown                          | Game         | **Untested**   |
+| **netconpassword**           | Unknown                          | Game         | **Untested**   |
+| **netconport**               | Unknown                          | Game         | **Untested**   |
+| **netspike**                 | Unknown                          | Game         | **Untested**   |
+| **novpk**                    | Unknown                          | Game         | **Untested**   |
+| **novr**                     | Disable VR Mode                  | Game         | **Functional** |
+| **pause**                    | Unknown                          | Game         | **Untested**   |
+| **port**    <*int*>          | Unknown                          | Game         | **Untested**   |
+| **textlanguage**             | Unknown                          | Game         | **Untested**   |
+| **textsublanguage**          | Unknown                          | Game         | **Untested**   |
+| **vrdemo**                   | Leftover from Robot Repair demo? | Game         | **Untested**   |
+| **addon**      <*string*>    | Launch game with addon           | Game         | **Untested**   |
+| **addon_path**    <*string*> | Addon path                       | Game         | **Untested**   |
+| **usercon**                  | Enable RCON remote server admin  | Game         | **Functional** |
 
 ### *Rendering*
 
@@ -162,7 +162,7 @@ Below is an example of the formatting for the command line table
 | **dx11debugbreak**                                   | Unknown                                   | Rendering    | **Untested**   |
 | **dx11renderthreadstack**                            | Unknown                                   | Rendering    | **Untested**   |
 | **dx9**                                              | Unknown                                   | Rendering    | **Untested**   |
-| **dxlevel**                                          | Set Direct X rendering level              | Rendering    | **Functional** |
+| **dxlevel**   <*int*>                                | Set Direct X rendering level              | Rendering    | **Functional** |
 | **dxwarp**                                           | Unknown                                   | Rendering    | **Untested**   |
 | **forcedx11dx9**                                     | Unknown                                   | Rendering    | **Untested**   |
 | **fullscreen**                                       | Unknown                                   | Rendering    | **Untested**   |
@@ -245,10 +245,10 @@ Below is an example of the formatting for the command line table
 | **vulkan_use_ios_vcs**                               | Unknown                                   | Rendering    | **Untested**   |
 | **vulkan_validation_warnings**                       | Unknown                                   | Rendering    | **Untested**   |
 | **vulkanrenderthreadstack**                          | Unknown                                   | Rendering    | **Untested**   |
-| **w**                                                | Set window width                          | Rendering    | **Untested**   |
-| **width**                                            | Set window width                          | Rendering    | **Untested**   |
-| **x**                                                | Set window X position                     | Rendering    | **Untested**   |
-| **y**                                                | Set window Y position                     | Rendering    | **Untested**   |
+| **w**        <*int*>                                 | Set window width                          | Rendering    | **Untested**   |
+| **width**       <*int*>                              | Set window width                          | Rendering    | **Untested**   |
+| **x**           <*int*>                              | Set window X position                     | Rendering    | **Untested**   |
+| **y**             <*int*>                            | Set window Y position                     | Rendering    | **Untested**   |
 | **1600**                                             | Set render width to 1600                  | Rendering    | **Untested**   |
 | **480**                                              | Set render height to 480                  | Rendering    | **Untested**   |
 | **4gpu**                                             | Enable Multi-GPU?                         | Rendering    | **Untested**   |
@@ -285,18 +285,18 @@ Below is an example of the formatting for the command line table
 | **vr**                    | Enable VR mode                                                | System       | **Functional** |
 | **2GB**                   | Unknown                                                       | System       | **Untested**   |
 | **dedicated**             | Start dedicated server                                        | System       | **Functional** |
-| **help**                  | Print details of convar/con-command                           | System       | **Functional** |
+| **help**                  | Print usage                                                   | System       | **Functional** |
 
 ### *Tools*
 
-| **Flag**          | **Effect**                                | **Category** | **Status**     |
-| ----------------- | ----------------------------------------- | ------------ | -------------- |
-| **notoolsdev**    | Unknown                                   | Tools        | **Untested**   |
-| **tool**          | Select startup tool?                      | Tools        | **Untested**   |
-| **tools**         | Start in tools mode                       | Tools        | **Functional** |
-| **toolsonly**     | Start only tools and not engine?          | Tools        | **Untested**   |
-| **toolsvr**       | Enable VR mode in tools?                  | Tools        | **Untested**   |
-| **buildcubemaps** | Build cubemaps for currently loaded level | Tools        | **Functional** |
+| **Flag**          | **Effect**                       | **Category** | **Status**     |
+| ----------------- | -------------------------------- | ------------ | -------------- |
+| **notoolsdev**    | Unknown                          | Tools        | **Untested**   |
+| **tool**          | Select startup tool?             | Tools        | **Untested**   |
+| **tools**         | Start in tools mode              | Tools        | **Functional** |
+| **toolsonly**     | Start only tools and not engine? | Tools        | **Untested**   |
+| **toolsvr**       | Enable VR mode in tools?         | Tools        | **Untested**   |
+| **buildcubemaps** | Build cubemaps on load           | Tools        | **Functional** |
 
 ### *Unknown*
 
@@ -329,7 +329,7 @@ Below is an example of the formatting for the command line table
 | **condebug**                           | Unknown                   | Unknown      | **Untested** |
 | **conrotate**                          | Unknown                   | Unknown      | **Untested** |
 | **consoleapp**                         | Unknown                   | Unknown      | **Untested** |
-| **contentroot**                        | Unknown                   | Unknown      | **Untested** |
+| **contentroot**   <*string*>           | Unknown                   | Unknown      | **Untested** |
 | **coop_fullscreen**                    | Unknown                   | Unknown      | **Untested** |
 | **cs**                                 | Unknown                   | Unknown      | **Untested** |
 | **dac_offline**                        | Unknown                   | Unknown      | **Untested** |
@@ -420,7 +420,7 @@ Below is an example of the formatting for the command line table
 | **rgb**                                | Unknown                   | Unknown      | **Untested** |
 | **rgba**                               | Unknown                   | Unknown      | **Untested** |
 | **rs_reset**                           | Unknown                   | Unknown      | **Untested** |
-| **script**                             | Unknown                   | Unknown      | **Untested** |
+| **script**      <*int*>                | Unknown                   | Unknown      | **Untested** |
 | **servertime**                         | Unknown                   | Unknown      | **Untested** |
 | **tempcontent**                        | Unknown                   | Unknown      | **Untested** |
 | **testmode**                           | Unknown                   | Unknown      | **Untested** |
