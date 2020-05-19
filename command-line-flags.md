@@ -4,6 +4,8 @@
   - [engine2.dll](#engine2dll)
   - [resourcecompiler.dll](#resourcecompilerdll)
   - [materialsystem2.dll](#materialsystem2dll)
+  - [rendersystemdx11.dll](#rendersystemdx11dll)
+  - [rendersystemvulkan.dll](#rendersystemvulkandll)
 
 # Summary
 Below are the command line flags gleaned by disassembling the following binaries from the Half Life: Alyx Workshop Tools. 
@@ -15,58 +17,58 @@ tier0.dll
 ---
 > This library is loaded by all assemblies in the engine, therefore the flags listed below should apply to all executables used by the tools.
                     
-| **Flag**                     | **Effect**                                                                                   |
-| ---------------------------- | -------------------------------------------------------------------------------------------- |
-| vminidump_exception_code     | Unknown                                                                                      |
-| testmode                     | Unknown                                                                                      |
-| stealthdebugger              | Unknown                                                                                      |
-| start_resource_profiling     | Unknown                                                                                      |
-| retail                       | Force engine to run in retail mode.                                                          |
-| profile                      | Unknown                                                                                      |
-| phased_window_create         | Unknown                                                                                      |
-| nominidumps                  | Unknown                                                                                      |
-| noloaderlockprobe            | Unknown                                                                                      |
-| nohibernate                  | Unknown                                                                                      |
-| nodump                       | Unknown                                                                                      |
-| nocustomermachine            | Enable Valve internal features. Also enables physics tool in hammer, and Source 1 MDL import.                                   |
-| noautoargs                   | Unknown                                                                                      |
-| noassert                     | Prevents asserts from being checked. **This has no affect on retail builds**                 |
-| no_assert_dialog             | Forces asserts to be sent to stdout. **This has no affect on retail builds**                 |
-| mpi_worker                   | **Unconfirmed:** Enables Valve MPI for distributed builds.                                   |
-| minidump_log_path            | Unknown                                                                                      |
-| minidump_full                | Unknown                                                                                      |
-| memstackstats_keep_pools     | Unknown                                                                                      |
-| inset_top                    | Unknown                                                                                      |
-| inset_right                  | Unknown                                                                                      |
-| inset_left                   | Unknown                                                                                      |
-| inset_bottom                 | Unknown                                                                                      |
-| ignorecontentasserts         | Unknown                                                                                      |
-| full_memory_dumps            | Unknown                                                                                      |
-| force_dpi                    | Unknown                                                                                      |
-| force_battery_level_battery  | Unknown                                                                                      |
-| force_battery_level          | Unknown                                                                                      |
-| force_assert_sdl_dialog      | Unknown                                                                                      |
-| etwprofile                   | Unknown                                                                                      |
-| error                        | Unknown                                                                                      |
-| enable_minidump_log          | Unknown                                                                                      |
-| emaildumps                   | Unknown                                                                                      |
-| disablehangwatchdog          | Unknown                                                                                      |
-| disable_minidump_log         | Unknown                                                                                      |
-| disable_affinity_preferences | Unknown                                                                                      |
-| dedicated                    | Run engine in dedicated server mode.                                                         |
-| debugbreak                   | Unknown                                                                                      |
-| debug_exitprocess            | Unknown                                                                                      |
-| clearassertstate             | Unknown                                                                                      |
-| break_on_crash               | Unknown                                                                                      |
-| assertbreak                  | Unknown                                                                                      |
-| assert_content               | Unknown                                                                                      |
-| assert                       | Unknown                                                                                      |
-| allowmultiple                | **Unconfirmed:** Allow multiple instances of the engine. This may not work on retail builds. |
-| RESERVELOWMEM                | Unknown                                                                                      |
-| PROCESSHEAPZEROMEM           | Unknown                                                                                      |
-| PROCESSHEAP                  | Unknown                                                                                      |
-| NOPROCESSHEAP                | Unknown                                                                                      |
-| 2GB                          | Unknown                                                                                      |
+| **Flag**                     | **Effect**                                                                                    |
+| ---------------------------- | --------------------------------------------------------------------------------------------- |
+| vminidump_exception_code     | Unknown                                                                                       |
+| testmode                     | Unknown                                                                                       |
+| stealthdebugger              | Unknown                                                                                       |
+| start_resource_profiling     | Unknown                                                                                       |
+| retail                       | Force engine to run in retail mode.                                                           |
+| profile                      | Unknown                                                                                       |
+| phased_window_create         | Unknown                                                                                       |
+| nominidumps                  | Unknown                                                                                       |
+| noloaderlockprobe            | Unknown                                                                                       |
+| nohibernate                  | Unknown                                                                                       |
+| nodump                       | Unknown                                                                                       |
+| nocustomermachine            | Enable Valve internal features. Also enables physics tool in hammer, and Source 1 MDL import. |
+| noautoargs                   | Unknown                                                                                       |
+| noassert                     | Prevents asserts from being checked. **This has no affect on retail builds**                  |
+| no_assert_dialog             | Forces asserts to be sent to stdout. **This has no affect on retail builds**                  |
+| mpi_worker                   | **Unconfirmed:** Enables Valve MPI for distributed builds.                                    |
+| minidump_log_path            | Unknown                                                                                       |
+| minidump_full                | Unknown                                                                                       |
+| memstackstats_keep_pools     | Unknown                                                                                       |
+| inset_top                    | Unknown                                                                                       |
+| inset_right                  | Unknown                                                                                       |
+| inset_left                   | Unknown                                                                                       |
+| inset_bottom                 | Unknown                                                                                       |
+| ignorecontentasserts         | Unknown                                                                                       |
+| full_memory_dumps            | Unknown                                                                                       |
+| force_dpi                    | Unknown                                                                                       |
+| force_battery_level_battery  | Unknown                                                                                       |
+| force_battery_level          | Unknown                                                                                       |
+| force_assert_sdl_dialog      | Unknown                                                                                       |
+| etwprofile                   | Unknown                                                                                       |
+| error                        | Unknown                                                                                       |
+| enable_minidump_log          | Unknown                                                                                       |
+| emaildumps                   | Unknown                                                                                       |
+| disablehangwatchdog          | Unknown                                                                                       |
+| disable_minidump_log         | Unknown                                                                                       |
+| disable_affinity_preferences | Unknown                                                                                       |
+| dedicated                    | Run engine in dedicated server mode.                                                          |
+| debugbreak                   | Unknown                                                                                       |
+| debug_exitprocess            | Unknown                                                                                       |
+| clearassertstate             | Unknown                                                                                       |
+| break_on_crash               | Unknown                                                                                       |
+| assertbreak                  | Unknown                                                                                       |
+| assert_content               | Unknown                                                                                       |
+| assert                       | Unknown                                                                                       |
+| allowmultiple                | **Unconfirmed:** Allow multiple instances of the engine. This may not work on retail builds.  |
+| RESERVELOWMEM                | Unknown                                                                                       |
+| PROCESSHEAPZEROMEM           | Unknown                                                                                       |
+| PROCESSHEAP                  | Unknown                                                                                       |
+| NOPROCESSHEAP                | Unknown                                                                                       |
+| 2GB                          | Unknown                                                                                       |
 
 ## vrad3.exe
 > This executable is called by resourcecompiler.exe/Hammer during a final map compile.
@@ -331,7 +333,7 @@ tier0.dll
 | no_tier2_bundle                    | Unknown    |
 | no_bundle_module                   | Unknown    |
 | msaa                               | Unknown    |
-| mobile                             | Unknown |
+| mobile                             | Unknown    |
 | mantle                             | Unknown    |
 | logwarnings                        | Unknown    |
 | inf                                | Unknown    |
@@ -397,7 +399,6 @@ tier0.dll
 > This library is loaded by all parts the engine that rely on shaders/rendering. 
 > 
 > **Examples:** Game window, tools, sfm, things that have a render window
-> 
 > **Except:** Dedicated server, vpk.exe, command line tools or headless tools
 
 | **Flag**               | **Effect** |
@@ -429,3 +430,168 @@ tier0.dll
 | vs                     | Unknown    |
 | vulkan_use_android_vcs | Unknown    |
 | vulkan_use_ios_vcs     | Unknown    |
+
+
+## rendersystemdx11.dll
+> This library is loaded by the engine when the renderer is set to dxlevel 110. Default on Windows.
+
+| **Flag**               | **Effect** |
+| ---------------------- | ---------- |
+| 4gpu                   | Unknown    |
+| adapter                | Unknown    |
+| autoconfig             | Unknown    |
+| autoconfig_level       | Unknown    |
+| avx                    | Unknown    |
+| deferTextureLoads      | Unknown    |
+| disable_async_shaders  | Unknown    |
+| disallowhwmorph        | Unknown    |
+| dontEvictTextures      | Unknown    |
+| dx11                   | Unknown    |
+| dx11debug              | Unknown    |
+| dx11debugbreak         | Unknown    |
+| dx11renderthreadstack  | Unknown    |
+| dx9                    | Unknown    |
+| dxwarp                 | Unknown    |
+| empty                  | Unknown    |
+| force_recommend_gl     | Unknown    |
+| forcedx11dx9           | Unknown    |
+| gl                     | Unknown    |
+| ignoredxsupportcfg     | Unknown    |
+| mantle                 | Unknown    |
+| maxdxlevel             | Unknown    |
+| maxtexturepoolsize_2gb | Unknown    |
+| maxtextureres          | Unknown    |
+| maxtextureres_2gb      | Unknown    |
+| multigpu               | Unknown    |
+| noframelatencylimit    | Unknown    |
+| nogammaramp            | Unknown    |
+| nomipmaps              | Unknown    |
+| nomultigpu             | Unknown    |
+| oldtexturestreaming    | Unknown    |
+| onethreadpool          | Unknown    |
+| preloadtextures        | Unknown    |
+| r_max_device_threads   | Unknown    |
+| sgpu                   | Unknown    |
+| shaderstats            | Unknown    |
+| shadowTargetSize       | Unknown    |
+| sse2                   | Unknown    |
+| sse3                   | Unknown    |
+| sse4                   | Unknown    |
+| suppressdx9            | Unknown    |
+| swap_chain_as_is       | Unknown    |
+| vulkan                 | Unknown    |
+
+
+## rendersystemvulkan.dll
+> This library is loaded by the engine when the vulkan flag is passed. Default on Linuw.
+
+| **Flag**                                          | **Effect** |
+| ------------------------------------------------- | ---------- |
+| deferTextureLoads                                 | Unknown    |
+| disallowhwmorph                                   | Unknown    |
+| disallowhwmorph                                   | Unknown    |
+| dontEvictTextures                                 | Unknown    |
+| dx11                                              | Unknown    |
+| dx11                                              | Unknown    |
+| dx9                                               | Unknown    |
+| dx9                                               | Unknown    |
+| element array of                                  | Unknown    |
+| empty                                             | Unknown    |
+| end of input-(                                    | Unknown    |
+| force_recommend_gl                                | Unknown    |
+| gl                                                | Unknown    |
+| gl                                                | Unknown    |
+| glsl_to_spirv                                     | Unknown    |
+| ignoredxsupportcfg                                | Unknown    |
+| inf                                               | Unknown    |
+| inf                                               | Unknown    |
+| lunarg_no_present_fence                           | Unknown    |
+| mantle                                            | Unknown    |
+| maxdxlevel                                        | Unknown    |
+| maxtexturepoolsize_2gb                            | Unknown    |
+| maxtextureres                                     | Unknown    |
+| maxtextureres_2gb                                 | Unknown    |
+| memory-                                           | Unknown    |
+| memory-                                           | Unknown    |
+| multigpu                                          | Unknown    |
+| multigpu                                          | Unknown    |
+| newtexturestreaming                               | Unknown    |
+| nogammaramp                                       | Unknown    |
+| nomultigpu                                        | Unknown    |
+| nomultigpu                                        | Unknown    |
+| oldtexturestreaming                               | Unknown    |
+| preloadtextures                                   | Unknown    |
+| r_max_device_threads                              | Unknown    |
+| r_max_device_threads                              | Unknown    |
+| sgpu                                              | Unknown    |
+| sgpu                                              | Unknown    |
+| shaderstats                                       | Unknown    |
+| shaderstats                                       | Unknown    |
+| shadowTargetSize                                  | Unknown    |
+| sse2                                              | Unknown    |
+| sse3                                              | Unknown    |
+| sse4                                              | Unknown    |
+| tx-struct                                         | Unknown    |
+| unknown source-                                   | Unknown    |
+| unknown source-(                                  | Unknown    |
+| unknown source-(                                  | Unknown    |
+| vulkan                                            | Unknown    |
+| vulkan                                            | Unknown    |
+| vulkan_aggressive_command_pool_rebalancing        | Unknown    |
+| vulkan_aggressive_command_pool_rebalancing_2gb    | Unknown    |
+| vulkan_alloc_callbacks                            | Unknown    |
+| vulkan_amd_disable_bind_vertex_buffers_workaround | Unknown    |
+| vulkan_cmd_buffer_pool_size                       | Unknown    |
+| vulkan_depth_texture_as_r32f                      | Unknown    |
+| vulkan_descriptor_sets_per_pool                   | Unknown    |
+| vulkan_diagnostic_checkpoints                     | Unknown    |
+| vulkan_disable_amd_memory_overallocation_behavior | Unknown    |
+| vulkan_disable_async_compute                      | Unknown    |
+| vulkan_disable_device_coherent_allocations        | Unknown    |
+| vulkan_disable_ext_memory_budget                  | Unknown    |
+| vulkan_disable_ext_memory_budget                  | Unknown    |
+| vulkan_disable_ext_memory_priority                | Unknown    |
+| vulkan_disable_ext_separate_stencil_usage         | Unknown    |
+| vulkan_disable_ext_validation_cache               | Unknown    |
+| vulkan_disable_external_subpass_dependency        | Unknown    |
+| vulkan_disable_khr_descriptor_update_template     | Unknown    |
+| vulkan_disable_khr_image_format_list              | Unknown    |
+| vulkan_disable_khr_maintenance1                   | Unknown    |
+| vulkan_disable_khr_maintenance2                   | Unknown    |
+| vulkan_disable_khr_swapchain_mutable_format       | Unknown    |
+| vulkan_disable_mipgen_compute_shader              | Unknown    |
+| vulkan_disable_nv_dedicated_allocation            | Unknown    |
+| vulkan_disable_occlusion_queries                  | Unknown    |
+| vulkan_disable_occlusion_queries                  | Unknown    |
+| vulkan_disable_pipeline_cache                     | Unknown    |
+| vulkan_disable_pool_textures                      | Unknown    |
+| vulkan_disable_pool_textures                      | Unknown    |
+| vulkan_disable_secondary_command_buffers          | Unknown    |
+| vulkan_disable_steam_app_shader_cache             | Unknown    |
+| vulkan_disable_steam_downloaded_shader_cache      | Unknown    |
+| vulkan_disable_steam_shader_cache                 | Unknown    |
+| vulkan_disable_swapchain_sampling                 | Unknown    |
+| vulkan_disable_validation_api_parameters          | Unknown    |
+| vulkan_disable_validation_core_checks             | Unknown    |
+| vulkan_disable_validation_object_lifetimes        | Unknown    |
+| vulkan_disable_validation_shaders                 | Unknown    |
+| vulkan_disable_validation_thread_safety           | Unknown    |
+| vulkan_disable_validation_unique_handles          | Unknown    |
+| vulkan_dump_shaders                               | Unknown    |
+| vulkan_enable_gpu_validation                      | Unknown    |
+| vulkan_enable_robust_buffer_access                | Unknown    |
+| vulkan_enable_validation                          | Unknown    |
+| vulkan_force_sm30                                 | Unknown    |
+| vulkan_force_sm30                                 | Unknown    |
+| vulkan_metal_validation                           | Unknown    |
+| vulkan_minimal_validation                         | Unknown    |
+| vulkan_no_image_transitions                       | Unknown    |
+| vulkan_scene_system_job_cost                      | Unknown    |
+| vulkan_scene_system_job_cost                      | Unknown    |
+| vulkan_trim_all_command_pools                     | Unknown    |
+| vulkan_trim_all_command_pools_2gb                 | Unknown    |
+| vulkan_trim_command_pools                         | Unknown    |
+| vulkan_trim_command_pools_2gb                     | Unknown    |
+| vulkan_validation_warnings                        | Unknown    |
+| vulkan_validation_warnings                        | Unknown    |
+| vulkanrenderthreadstack                           | Unknown    |
