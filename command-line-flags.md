@@ -32,100 +32,135 @@ Below is an example of the formatting for the command line table
 
 ## **Command line flags (by category)**
 
+NoVConfig
+dumpphotons
+dumppointsamples
+dumptrace
+interactive
+lv
+
+no_bundle_module
+no_tier2_bundle
+no_tier3_bundle
+silent
+skipphotons
+sse2
+sse3
+sse4
+tempcontent
+tests
+use_tier2_bundle
+use_tier3_bundle
+v
+verbose
+vproject
+
 ### *Developer*
 
-| **Flag**                     | **Effect**                                      | **Category**    | **Status**   |
-| ---------------------------- | ----------------------------------------------- | --------------- | ------------ |
-| **assert**                   | Enable asserts                                  | Developer/Debug | **Untested** |
-| **assert_content**           | Unknown                                         | Developer/Debug | **Untested** |
-| **assertbreak**              | Unknown                                         | Developer/Debug | **Untested** |
-| **break_on_crash**           | Unknown                                         | Developer/Debug | **Untested** |
-| **breakimmediately**         | Unknown                                         | Developer/Debug | **Untested** |
-| **breakpad**                 | Unknown                                         | Developer/Debug | **Untested** |
-| **console**                  | Enable Developer console                        | Developer/Debug | **Untested** |
-| **consolelog**               | Unknown                                         | Developer/Debug | **Untested** |
-| **consolelog_append**        | Unknown                                         | Developer/Debug | **Untested** |
-| **consolelog_notimestamp**   | Unknown                                         | Developer/Debug | **Untested** |
-| **consolelog_rotate**        | Unknown                                         | Developer/Debug | **Untested** |
-| **debug_exitprocess**        | Unknown                                         | Developer/Debug | **Untested** |
-| **debug_override_compiler**  | Unknown                                         | Developer/Debug | **Untested** |
-| **debugbreak**               | Unknown                                         | Developer/Debug | **Untested** |
-| **dev**                      | Enable developer mode                           | Developer/Debug | **Untested** |
-| **devcontent**               | Unknown                                         | Developer/Debug | **Untested** |
-| **heapcheck**                | Unknown                                         | Developer/Debug | **Untested** |
-| **hideconsole**              | Unknown                                         | Developer/Debug | **Untested** |
-| **html**                     | Enable html output to stdout                    | Developer/Debug | **Untested** |
-| **logwarnings**              | Unknown                                         | Developer/Debug | **Untested** |
-| **memory**                   | Unknown                                         | Developer/Debug | **Untested** |
-| **memstackstats_keep_pools** | Unknown                                         | Developer/Debug | **Untested** |
-| **minidump_full**            | Unknown                                         | Developer/Debug | **Untested** |
-| **minidump_log_path**        | Unknown                                         | Developer/Debug | **Untested** |
-| **mobile**                   | Unknown                                         | Developer/Debug | **Untested** |
-| **mpi_worker**               | Valve MPI flag, likely not functional in retail | Developer/Debug | **Untested** |
-| **no_assert_dialog**         | Disable assert dialogs and force to stdout      | Developer/Debug | **Untested** |
-| **no_bundle_module**         | Unknown                                         | Developer/Debug | **Untested** |
-| **no_tier2_bundle**          | Unknown                                         | Developer/Debug | **Untested** |
-| **no_tier3_bundle**          | Unknown                                         | Developer/Debug | **Untested** |
-| **no_vrconfig**              | Unknown                                         | Developer/Debug | **Untested** |
-| **noassert**                 | Disable asserts altogether                      | Developer/Debug | **Untested** |
-| **nobreakpad**               | Unknown                                         | Developer/Debug | **Untested** |
-| **nocustomermachine**        | Unknown                                         | Developer/Debug | **Untested** |
-| **nodedicatedconsole**       | Unknown                                         | Developer/Debug | **Untested** |
-| **nodev**                    | Unknown                                         | Developer/Debug | **Untested** |
-| **nodump**                   | Disable minidumps                               | Developer/Debug | **Untested** |
-| **noframelatencylimit**      | Unknown                                         | Developer/Debug | **Untested** |
-| **nogamestats**              | Unknown                                         | Developer/Debug | **Untested** |
-| **nogammaramp**              | Unknown                                         | Developer/Debug | **Untested** |
-| **nohibernate**              | Unknown                                         | Developer/Debug | **Untested** |
-| **nohltv**                   | Unknown                                         | Developer/Debug | **Untested** |
-| **noloaderlockprobe**        | Unknown                                         | Developer/Debug | **Untested** |
-| **nolod**                    | Unknown                                         | Developer/Debug | **Untested** |
-| **nominidumps**              | Unknown                                         | Developer/Debug | **Untested** |
-| **nomipmaps**                | Unknown                                         | Developer/Debug | **Untested** |
-| **nomultigpu**               | Unknown                                         | Developer/Debug | **Untested** |
-| **nop4**                     | Unknown                                         | Developer/Debug | **Untested** |
-| **nopanorama**               | Unknown                                         | Developer/Debug | **Untested** |
-| **nopassiveasserts**         | Unknown                                         | Developer/Debug | **Untested** |
-| **noPriorityBoost**          | Unknown                                         | Developer/Debug | **Untested** |
-| **NOPROCESSHEAP**            | Unknown                                         | Developer/Debug | **Untested** |
-| **nopvs**                    | Unknown                                         | Developer/Debug | **Untested** |
-| **norevert**                 | Unknown                                         | Developer/Debug | **Untested** |
-| **normalvis**                | Unknown                                         | Developer/Debug | **Untested** |
-| **noshaderopts**             | Unknown                                         | Developer/Debug | **Untested** |
-| **nosound**                  | Unknown                                         | Developer/Debug | **Untested** |
-| **novconsole**               | Unknown                                         | Developer/Debug | **Untested** |
-| **novwatch**                 | Unknown                                         | Developer/Debug | **Untested** |
-| **p4cachefiles**             | Unknown                                         | Developer/Debug | **Untested** |
-| **pauseiferror**             | Unknown                                         | Developer/Debug | **Untested** |
-| **preloadtextures**          | Unknown                                         | Developer/Debug | **Untested** |
-| **PROCESSHEAP**              | Unknown                                         | Developer/Debug | **Untested** |
-| **PROCESSHEAPZEROMEM**       | Unknown                                         | Developer/Debug | **Untested** |
-| **profile**                  | Unknown                                         | Developer/Debug | **Untested** |
-| **profilemapload**           | Unknown                                         | Developer/Debug | **Untested** |
-| **profilemapload_noquit**    | Unknown                                         | Developer/Debug | **Untested** |
-| **retail**                   | Unknown                                         | Developer/Debug | **Untested** |
-| **safe_mode**                | Unknown                                         | Developer/Debug | **Untested** |
-| **show_none**                | Unknown                                         | Developer/Debug | **Untested** |
-| **show_used_combos**         | Unknown                                         | Developer/Debug | **Untested** |
-| **showasserts**              | Unknown                                         | Developer/Debug | **Untested** |
-| **snap**                     | Unknown                                         | Developer/Debug | **Untested** |
-| **spewserializers**          | Unknown                                         | Developer/Debug | **Untested** |
-| **start_resource_profiling** | Unknown                                         | Developer/Debug | **Untested** |
-| **stealthdebugger**          | Unknown                                         | Developer/Debug | **Untested** |
-| **textmessagedebug**         | Unknown                                         | Developer/Debug | **Untested** |
-| **toconsole**                | Unknown                                         | Developer/Debug | **Untested** |
-| **uidev**                    | Unknown                                         | Developer/Debug | **Untested** |
-| **usep4port**                | Unknown                                         | Developer/Debug | **Untested** |
-| **vconport**                 | Unknown                                         | Developer/Debug | **Untested** |
-| **vconsole**                 | Enable VConsole2                                | Developer/Debug | **Untested** |
-| **vguiconsole**              | Re-enable legacy VGUI console?                  | Developer/Debug | **Untested** |
-| **vguimessages**             | Unknown                                         | Developer/Debug | **Untested** |
-| **vrad3**                    | Unknown                                         | Developer/Debug | **Untested** |
-| **vrdebug**                  | Unknown                                         | Developer/Debug | **Untested** |
-| **vwatch**                   | Unknown                                         | Developer/Debug | **Untested** |
-| **vwatch_disabled**          | Unknown                                         | Developer/Debug | **Untested** |
-| **vwatch_locking**           | Unknown                                         | Developer/Debug | **Untested** |
-| **appidoverride**            | Unknown                                         | Developer/Debug | **Untested** |
+| **Flag**                              | **Effect**                                      | **Category**    | **Status**   |
+| ------------------------------------- | ----------------------------------------------- | --------------- | ------------ |
+| **assert**                            | Enable asserts                                  | Developer/Debug | **Untested** |
+| **assert_content**                    | Unknown                                         | Developer/Debug | **Untested** |
+| **assertbreak**                       | Unknown                                         | Developer/Debug | **Untested** |
+| **break_on_crash**                    | Unknown                                         | Developer/Debug | **Untested** |
+| **breakimmediately**                  | Unknown                                         | Developer/Debug | **Untested** |
+| **breakpad**                          | Unknown                                         | Developer/Debug | **Untested** |
+| **console**                           | Enable Developer console                        | Developer/Debug | **Untested** |
+| **consolelog**                        | Unknown                                         | Developer/Debug | **Untested** |
+| **consolelog_append**                 | Unknown                                         | Developer/Debug | **Untested** |
+| **consolelog_notimestamp**            | Unknown                                         | Developer/Debug | **Untested** |
+| **consolelog_rotate**                 | Unknown                                         | Developer/Debug | **Untested** |
+| **debug_exitprocess**                 | Unknown                                         | Developer/Debug | **Untested** |
+| **debug_override_compiler**           | Unknown                                         | Developer/Debug | **Untested** |
+| **debugbreak**                        | Unknown                                         | Developer/Debug | **Untested** |
+| **dev**                               | Enable developer mode                           | Developer/Debug | **Untested** |
+| **hideconsole**                       | Unknown                                         | Developer/Debug | **Untested** |
+| **html**                              | Enable html output to stdout                    | Developer/Debug | **Untested** |
+| **logwarnings**                       | Unknown                                         | Developer/Debug | **Untested** |
+| **memory**                            | Unknown                                         | Developer/Debug | **Untested** |
+| **memstackstats_keep_pools**          | Unknown                                         | Developer/Debug | **Untested** |
+| **minidump_full**                     | Unknown                                         | Developer/Debug | **Untested** |
+| **minidump_log_path**                 | Unknown                                         | Developer/Debug | **Untested** |
+| **mobile**                            | Unknown                                         | Developer/Debug | **Untested** |
+| **mpi_worker**                        | Valve MPI flag, likely not functional in retail | Developer/Debug | **Untested** |
+| **mpi**                               | Unknown                                         | Developer/Debug | **Untested** |
+| **mpi_MasterName**                    | Unknown                                         | Developer/Debug | **Untested** |
+| **mpi_NoScheduler**                   | Unknown                                         | Developer/Debug | **Untested** |
+| **mpi_PatchVersion**                  | Unknown                                         | Developer/Debug | **Untested** |
+| **mpi_PatchWorkers**                  | Unknown                                         | Developer/Debug | **Untested** |
+| **mpi_file**                          | Unknown                                         | Developer/Debug | **Untested** |
+| **mpi_filebase**                      | Unknown                                         | Developer/Debug | **Untested** |
+| **mpi_pw**                            | Unknown                                         | Developer/Debug | **Untested** |
+| **mpi_show_redistributed_work_units** | Unknown                                         | Developer/Debug | **Untested** |
+| **no_assert_dialog**                  | Disable assert dialogs and force to stdout      | Developer/Debug | **Untested** |
+| **no_bundle_module**                  | Unknown                                         | Developer/Debug | **Untested** |
+| **no_tier2_bundle**                   | Unknown                                         | Developer/Debug | **Untested** |
+| **no_tier3_bundle**                   | Unknown                                         | Developer/Debug | **Untested** |
+| **no_vrconfig**                       | Unknown                                         | Developer/Debug | **Untested** |
+| **noassert**                          | Disable asserts altogether                      | Developer/Debug | **Untested** |
+| **nobreakpad**                        | Unknown                                         | Developer/Debug | **Untested** |
+| **nocustomermachine**                 | Unknown                                         | Developer/Debug | **Untested** |
+| **nodedicatedconsole**                | Unknown                                         | Developer/Debug | **Untested** |
+| **nodev**                             | Unknown                                         | Developer/Debug | **Untested** |
+| **nodump**                            | Disable minidumps                               | Developer/Debug | **Untested** |
+| **noframelatencylimit**               | Unknown                                         | Developer/Debug | **Untested** |
+| **nogamestats**                       | Unknown                                         | Developer/Debug | **Untested** |
+| **nogammaramp**                       | Unknown                                         | Developer/Debug | **Untested** |
+| **nohibernate**                       | Unknown                                         | Developer/Debug | **Untested** |
+| **nohltv**                            | Unknown                                         | Developer/Debug | **Untested** |
+| **noloaderlockprobe**                 | Unknown                                         | Developer/Debug | **Untested** |
+| **nolod**                             | Unknown                                         | Developer/Debug | **Untested** |
+| **nominidumps**                       | Unknown                                         | Developer/Debug | **Untested** |
+| **nomipmaps**                         | Unknown                                         | Developer/Debug | **Untested** |
+| **nomultigpu**                        | Unknown                                         | Developer/Debug | **Untested** |
+| **nop4**                              | Unknown                                         | Developer/Debug | **Untested** |
+| **nopanorama**                        | Unknown                                         | Developer/Debug | **Untested** |
+| **nopassiveasserts**                  | Unknown                                         | Developer/Debug | **Untested** |
+| **noPriorityBoost**                   | Unknown                                         | Developer/Debug | **Untested** |
+| **NOPROCESSHEAP**                     | Unknown                                         | Developer/Debug | **Untested** |
+| **nopvs**                             | Unknown                                         | Developer/Debug | **Untested** |
+| **norevert**                          | Unknown                                         | Developer/Debug | **Untested** |
+| **normalvis**                         | Unknown                                         | Developer/Debug | **Untested** |
+| **noshaderopts**                      | Unknown                                         | Developer/Debug | **Untested** |
+| **nosound**                           | Unknown                                         | Developer/Debug | **Untested** |
+| **novconsole**                        | Unknown                                         | Developer/Debug | **Untested** |
+| **novconfig**                         | Unknown                                         | Developer/Debug | **Untested** |
+| **novwatch**                          | Unknown                                         | Developer/Debug | **Untested** |
+| **p4cachefiles**                      | Unknown                                         | Developer/Debug | **Untested** |
+| **pauseiferror**                      | Unknown                                         | Developer/Debug | **Untested** |
+| **preloadtextures**                   | Unknown                                         | Developer/Debug | **Untested** |
+| **PROCESSHEAP**                       | Unknown                                         | Developer/Debug | **Untested** |
+| **PROCESSHEAPZEROMEM**                | Unknown                                         | Developer/Debug | **Untested** |
+| **profile**                           | Unknown                                         | Developer/Debug | **Untested** |
+| **profilemapload**                    | Unknown                                         | Developer/Debug | **Untested** |
+| **profilemapload_noquit**             | Unknown                                         | Developer/Debug | **Untested** |
+| **retail**                            | Unknown                                         | Developer/Debug | **Untested** |
+| **safe_mode**                         | Unknown                                         | Developer/Debug | **Untested** |
+| **silent**                            | Unknown                                         | Developer/Debug | **Untested** |
+| **show_none**                         | Unknown                                         | Developer/Debug | **Untested** |
+| **show_used_combos**                  | Unknown                                         | Developer/Debug | **Untested** |
+| **showasserts**                       | Unknown                                         | Developer/Debug | **Untested** |
+| **snap**                              | Unknown                                         | Developer/Debug | **Untested** |
+| **spewserializers**                   | Unknown                                         | Developer/Debug | **Untested** |
+| **start_resource_profiling**          | Unknown                                         | Developer/Debug | **Untested** |
+| **stealthdebugger**                   | Unknown                                         | Developer/Debug | **Untested** |
+| **textmessagedebug**                  | Unknown                                         | Developer/Debug | **Untested** |
+| **tests**                             | Unknown                                         | Developer/Debug | **Untested** |
+| **toconsole**                         | Unknown                                         | Developer/Debug | **Untested** |
+| **uidev**                             | Unknown                                         | Developer/Debug | **Untested** |
+| **usep4port**                         | Unknown                                         | Developer/Debug | **Untested** |
+| **vconport**                          | Unknown                                         | Developer/Debug | **Untested** |
+| **vconsole**                          | Enable VConsole2                                | Developer/Debug | **Untested** |
+| **verbose**                           | Enable verbose logging                          | Developer/Debug | **Untested** |
+| **vguiconsole**                       | Re-enable legacy VGUI console?                  | Developer/Debug | **Untested** |
+| **vguimessages**                      | Unknown                                         | Developer/Debug | **Untested** |
+| **vproject**                          | Unknown                                         | Developer/Debug | **Untested** |
+| **vrad3**                             | Unknown                                         | Developer/Debug | **Untested** |
+| **vrdebug**                           | Unknown                                         | Developer/Debug | **Untested** |
+| **vwatch**                            | Unknown                                         | Developer/Debug | **Untested** |
+| **vwatch_disabled**                   | Unknown                                         | Developer/Debug | **Untested** |
+| **vwatch_locking**                    | Unknown                                         | Developer/Debug | **Untested** |
+| **appidoverride**                     | Unknown                                         | Developer/Debug | **Untested** |
 
 ### *Game*
 
@@ -289,14 +324,20 @@ Below is an example of the formatting for the command line table
 
 ### *Tools*
 
-| **Flag**          | **Effect**                       | **Category** | **Status**     |
-| ----------------- | -------------------------------- | ------------ | -------------- |
-| **notoolsdev**    | Unknown                          | Tools        | **Untested**   |
-| **tool**          | Select startup tool?             | Tools        | **Untested**   |
-| **tools**         | Start in tools mode              | Tools        | **Functional** |
-| **toolsonly**     | Start only tools and not engine? | Tools        | **Untested**   |
-| **toolsvr**       | Enable VR mode in tools?         | Tools        | **Untested**   |
-| **buildcubemaps** | Build cubemaps on load           | Tools        | **Functional** |
+| **Flag**             | **Effect**                       | **Category**    | **Status**     |
+| -------------------- | -------------------------------- | --------------- | -------------- |
+| **notoolsdev**       | Unknown                          | Tools           | **Untested**   |
+| **tool**             | Select startup tool?             | Tools           | **Untested**   |
+| **tools**            | Start in tools mode              | Tools           | **Functional** |
+| **toolsonly**        | Start only tools and not engine? | Tools           | **Untested**   |
+| **toolsvr**          | Enable VR mode in tools?         | Tools           | **Untested**   |
+| **buildcubemaps**    | Build cubemaps on load           | Tools           | **Functional** |
+| **dumpphotons**      | Unknown                          | Tools           | **Untested**   |
+| **dumppointsamples** | Unknown                          | Tools           | **Untested**   |
+| **dumptrace**        | Unknown                          | Tools           | **Untested**   |
+| **heapcheck**        | Unknown                          | Tools           | **Untested**   |
+| **skipphotons**      | Unknown                          | Developer/Debug | **Untested**   |
+
 
 ### *Unknown*
 
