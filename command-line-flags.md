@@ -169,8 +169,8 @@ Below is an example of the formatting for the command line table
 | **gl**                                               | Unknown                                   | Rendering    | **Untested**   |
 | **gl_use_mobile_vcs**                                | Unknown                                   | Rendering    | **Untested**   |
 | **glsl_to_spirv**                                    | Unknown                                   | Rendering    | **Untested**   |
-| **height**                                           | Unknown                                   | Rendering    | **Untested**   |
-| **msaa**                                             | Enable MSAA anti-aliasing?                | Rendering    | **Untested**   |
+| **height**      <*int*>                              | Unknown                                   | Rendering    | **Untested**   |
+| **msaa**         <*int*>                             | Enable MSAA anti-aliasing?                | Rendering    | **Untested**   |
 | **multigpu**                                         | Unknown                                   | Rendering    | **Untested**   |
 | **noborder**                                         | Disable window border                     | Rendering    | **Functional** |
 | **novsync**                                          | Prevent Vsync                             | Rendering    | **Functional** |
