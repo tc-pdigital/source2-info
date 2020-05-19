@@ -32,29 +32,6 @@ Below is an example of the formatting for the command line table
 
 ## **Command line flags (by category)**
 
-NoVConfig
-dumpphotons
-dumppointsamples
-dumptrace
-interactive
-lv
-
-no_bundle_module
-no_tier2_bundle
-no_tier3_bundle
-silent
-skipphotons
-sse2
-sse3
-sse4
-tempcontent
-tests
-use_tier2_bundle
-use_tier3_bundle
-v
-verbose
-vproject
-
 ### *Developer*
 
 | **Flag**                              | **Effect**                                      | **Category**    | **Status**   |
